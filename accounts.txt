@@ -1,0 +1,19 @@
+Admin:
+	Username: Railgun
+	Password: Misaka
+
+	Username: Akashi
+	Password: kisekinosedai
+
+Member:
+	Username: Lararara
+	Password: lara
+
+	username: Luna_
+	pass: lunar
+
+	username: Raze
+	password: raze
+
+	username: Arthur
+	password: america

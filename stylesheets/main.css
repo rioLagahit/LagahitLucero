@@ -1,0 +1,506 @@
+/*
+	colors
+		blue : rgb(140,202,188)
+		white : rgb(255,255,255)
+		cream : rgb(252,242,188)
+		gray : rgb(140,130,116) 
+		green : rgb(212,226,148) 
+*/
+
+html {
+	font-family: "Titillium";
+	height: 100%;
+
+	background: url('../images/green.gif');
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+body {
+	width: 1200px;
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	background-color: rgb(255,250,250);
+	color: rgb(140,130,116) ;
+	background-repeat: repeat;
+}
+
+a {
+	color: inherit;
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+	color: rgb(140,130,116);
+}
+
+a:hover {
+	text-shadow: rgba(77,77,77,0.6) 1px 1px 5px;
+}
+
+.settings_button {
+	display: inline-block;
+	position: absolute;
+	margin: 7px 5px;
+	text-align: center;
+	vertical-align: center;
+}
+
+
+#header{
+	margin: auto;
+	height: 300px;
+	padding: 10px 50px;
+	font-family: "continuum medium";
+	font-size: 1.8em;
+	color: rgb(255,255,255);
+	position: relative;
+	text-shadow: rgb(0,0,0) 0 0 10px;
+}
+
+#header div {
+	position: absolute;
+	bottom: 15px;
+}
+
+#header h1{
+	margin: 3px auto;
+}
+
+#header h5 {
+	font-weight: normal;
+	margin: 3px auto;
+}
+
+/*nav styles*/
+
+#nav {
+	font-family: "continuum medium";
+	font-size: 1.1em;
+	font-weight: bold;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#nav ul {
+	height: 40px; /*height*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	background: rgb(140,202,188);
+
+	-moz-box-shadow: 0 0 7px rgb(77,77,77);
+   	-webkit-box-shadow: 0 0 7px rgb(77,77,77);
+   	box-shadow: 0 0 7px rgb(77,77,77);
+}
+
+#nav li {
+	float: left;
+	padding: 0;
+}
+
+#nav li a {
+	background: transparent; /*white*/
+	width: 65px; /*width of main nav*/
+	display: block;
+	line-height: 40px; /*height*/
+	margin: 0;
+	padding: 0 25px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#nav>ul>li>a {
+	color: rgb(255,255,255);
+}
+
+#nav ul ul a {
+	color: rgb(255,255,255);
+}
+
+#nav li>a:hover,#nav ul li:hover>a {
+	background: rgb(252,242,188);
+	color: rgb(140,130,116);
+	text-decoration: none;
+}
+
+#nav li ul {
+	background: rgb(255,255,255); /*white*/
+	width: 115px; /*width of drop list*/
+	display: none;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	position: absolute;
+	z-index: 200;
+	/*top:1em;
+	/*left:0;*/
+}
+
+#nav li:hover ul {
+	display: block;
+}
+
+#nav li li {
+	background: bottom left no-repeat;
+	display: block;
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav li:hover li a {
+	background: none;
+	width: 90px; /*width of hover*/
+}
+
+#nav li ul a {
+	display: block;
+	height: 35px;
+	
+	font-style: normal;
+	margin: 0px;
+	padding: 0 10px 0 15px;
+	text-align: left;
+}
+
+#nav li ul a:hover,#nav li ul li:hover>a {
+	background: rgb(235,183,33); /*orange*/
+	border: 0;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#nav p {
+	clear: left;
+}
+
+/*end of nav styles*/
+
+#content {
+	margin: auto;
+	padding: 25px;
+}
+
+/*Forum tables styles*/
+
+.listBoxOuter {
+	background: rgb(140,202,188);
+	color: rgb(255,255,255);
+	margin: 50px 0;
+
+	-moz-box-shadow: 0 0 7px rgb(77,77,77);
+   	-webkit-box-shadow: 0 0 7px rgb(77,77,77);
+   	box-shadow: 0 0 7px rgb(77,77,77);
+}
+
+.listBoxTitle {
+	width: 98%;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 25px 0 0;
+	padding: 8px 10px;
+}
+
+.listBottom {
+	height: 40px;
+}
+
+.listBoxTable, .listBoxTablePost {
+	width: 100%;
+	background: rgb(252,242,188);
+	color: rgb(140,130,116);
+	border-collapse: collapse;
+	padding: 10px;
+	margin: 0;
+
+	-moz-box-shadow:
+		inset 0px 11px 8px -10px rgba(77,77,77,0.7),
+        inset 0px -11px 8px -10px rgba(77,77,77,0.7); 
+   	-webkit-box-shadow: 
+   		inset 0px 11px 8px -10px rgba(77,77,77,0.7),
+        inset 0px -11px 8px -10px rgba(77,77,77,0.7); 
+   	box-shadow: 
+        inset 0px 11px 8px -10px rgba(77,77,77,0.7),
+        inset 0px -11px 8px -10px rgba(77,77,77,0.7);
+}
+
+.listBoxTable, .listBoxTable th, .listBoxTable tr, .listBoxTable td {
+	padding: 10px;
+	border: 2px solid rgb(140,202,188);
+}
+
+.listBoxTable th {
+	font-size: 1em;
+}
+
+.listBoxTable a {
+	text-decoration: none;
+	color: rgb(140,130,116);
+}
+
+.listBoxTable tr a:hover {
+	text-shadow: rgba(77,77,77,0.6) 1px 1px 5px;
+}
+
+.table_name {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.table_thread {
+	font-size: 0.9em;
+	text-align: center;
+	font-weight: bold;
+}
+
+/*small text below forum titles*/
+.description {
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+/*end of forum table styles*/
+
+.outerBox {
+	background: rgb(140,202,188);
+	color: rgb(255,255,255);
+	width: 550px;
+	margin: 15px auto;
+
+	-moz-box-shadow: 0 0 7px rgb(77,77,77);
+   	-webkit-box-shadow: 0 0 7px rgb(77,77,77);
+   	box-shadow: 0 0 7px rgb(77,77,77);
+}
+
+.titleBox {
+	font-family: "continuum medium";
+	font-size: 1.6em;
+	font-weight: bold;
+	text-align: center;
+
+	padding: 20px;
+}
+
+.innerBox {
+	background: rgb(252,242,188);
+	margin: 0;
+	padding: 20px;
+
+	-moz-box-shadow:
+		inset 0px 11px 8px -10px rgba(77,77,77,0.7),
+        inset 0px -11px 8px -10px rgba(77,77,77,0.7); 
+   	-webkit-box-shadow: 
+   		inset 0px 11px 8px -10px rgba(77,77,77,0.7),
+        inset 0px -11px 8px -10px rgba(77,77,77,0.7); 
+   	box-shadow: 
+        inset 0px 11px 8px -10px rgba(77,77,77,0.7),
+        inset 0px -11px 8px -10px rgba(77,77,77,0.7); 
+}
+
+.innerBox, .innerBox table {
+	margin: auto;
+	color: rgb(140,130,116);
+	font-weight: bold;
+	font-size: 1.05em;
+}
+
+.innerBox table, .innerBox td, .innerBox tr {
+	padding: 7px;
+}
+
+.innerBox td:nth-child(odd){
+	text-align: right;
+}
+
+.lowerBox {
+	height: 50px;
+	padding: 0;
+	margin: auto;
+	text-align: center;
+}
+
+/*outerBox Forms styles*/
+.outerBox .text {
+	width: 300px;
+	height: 33px;
+	padding: 5px;
+
+	font-family: inherit;
+	font-size: 0.9em;
+	font-weight: inherit;
+
+	background-color: rgb(252,245,214);
+	color: rgb(59,49,49);
+	border: 1px solid rgb(195,195,195);
+}
+
+.outerBox .buttonMain {
+	background: transparent;
+	color: inherit;
+	border: none;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+
+	font-family: "continuum medium";
+	font-size: 1.4em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.outerBox .buttonMain:hover {
+	cursor: pointer;
+}
+
+.noLowerBox {
+	padding-bottom: 50px;
+}
+
+.center {
+	margin: auto;
+	text-align: center;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.no_padding {
+	padding: 0;
+}
+
+#footer {
+	clear: both;
+	height: 20px;
+}
+
+.postTitle, .postText {
+	width: 100%;
+	margin: 5px auto;
+	padding: 5px;
+	resize: none;
+	border: 1px solid rgb(182,182,180);
+	background-color: rgb(252,245,214);
+	color: rgb(59,49,49);
+	font-family: inherit;
+	font-size: 0.95em;
+}
+
+.green, .red {
+	width: 450px;
+	margin: 10px auto;
+	padding: 5px;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.green {
+	border: 2px solid green;
+	background: rgba(157,198,106,0.5);
+}
+
+.red {
+	border: 2px solid rgb(183,63,63);
+	background: rgb(237,163,163);
+}
+
+.button {
+	background: rgb(140,202,188);
+	color: rgb(255,255,255);
+	border: 2px solid rgb(255,255,255);
+	border-radius: 10px;
+	margin: 0;
+	padding: 1px 5px;
+	font-family: inherit;
+	font-size: 1em;
+	font-weight: bold;
+	display: inline-block;
+
+	-moz-box-shadow: 0 0 3px rgb(140,130,116);
+	-webkit-box-shadow: 0 0 3px rgb(140,130,116);
+	box-shadow: 0 0 3px rgb(140,130,116);
+}
+
+.button:hover {
+	background: rgb(255,255,255);
+	color: rgb(140,202,188);
+	border: 2px solid rgb(140,202,188);
+	cursor: pointer;
+}
+
+.plus {
+	font-size: 1.2em;
+}
+
+/*posts inside thread styles*/
+
+.listBoxTablePost {
+	background: rgb(252,242,188);
+	color: rgb(140,130,116);
+	font-size: 1em;
+}
+
+.listBoxTablePost, .listBoxTablePost tr, .listBoxTablePost td {
+	border-collapse: collapse;
+	border-spacing: 5px;
+	padding: 10px;
+}
+
+.post_time {
+	background-color: rgb(212,226,148);
+	margin: 0;
+}
+
+.post_user, .post_content {
+	min-height: 350px;
+	vertical-align: top;
+}
+
+.post_user {
+	width: 180px;
+	border-right: 3px solid rgb(212,226,148);
+}
+
+.post_user a {
+	font-size: 1.5em;
+}
+
+.post_content {
+	font-family: "calibri";
+}
+
+.post_message {
+	min-height: 200px;
+}
+
+.post_edited {
+	color: rgb(121,121,121);
+    padding: 35px 0 10px;
+    font-size: 0.95em;
+    font-style: italic;
+}
+
+.post_signature {
+	margin: 10px 0;
+	padding: 10px 0;
+	border-top: 2px solid rgb(212,226,148);
+}
+
+.settings_icon {
+	display: inline-block;
+	float: right;
+	overflow: auto;
+	height: 25px;
+	padding: 0 5px;
+}
+
+.locked {
+	margin-right: 5px;
+}

@@ -1,0 +1,115 @@
+/*profile styles*/
+.profileLeft, .profileRight, .profileCenter {
+	margin: 0;
+	-moz-box-shadow: 0 0 7px rgb(77,77,77);
+   	-webkit-box-shadow: 0 0 7px rgb(77,77,77);
+   	box-shadow: 0 0 7px rgb(77,77,77);
+   	background: rgb(226,226,226);
+}
+
+.profileLeft {
+	float: left;
+	width: 280px;
+}
+
+.profileRight {
+	float: right;
+	width: 620px;	
+}
+
+#profileImage {
+	margin: 15px auto;
+}
+
+#profileName {
+	font-family: "continuum medium";
+	font-size: 1.6em;
+	font-weight: bold;
+	margin: 10px auto 5px;
+}
+
+#profileName hr {
+	width: 90%;
+    border: 1px solid rgb(114,110,109);
+}
+
+#options {
+	/*border: 2px solid green;*/
+}
+
+#options ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#options ul li {
+	text-align: center;
+}
+
+#options ul li a {
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	border-top: 1px solid rgb(182,182,180);
+	padding: 5px 0;
+	font-weight: bold;
+	font-size: 1.05em;
+}
+
+#options ul li a:hover {
+	background-color: rgba(235,183,33,0.8);
+	color: rgb(255,255,255);
+}
+
+.profileRight div {
+	margin: 5px auto;
+	padding: 8px;
+}
+
+.profileRight div div{
+	margin: 0;
+	padding: 0 5px;
+}
+
+.profileRight div .title {
+	font-family: "continuum medium";
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.profileRight div hr {
+	border: 1px solid rgb(114,110,109);
+}
+
+.profileRight table, .profileRight tr, .profileRight td {
+
+	font-size: 1.03em;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.profileRight table td:nth-child(odd) {
+	text-align: right;
+	color: rgb(121,121,121);
+}
+
+.profileCenter {
+	width: 800px;
+	margin: auto;
+	padding: 20px;
+}
+
+.profileCenter .title {
+	font-family: "continuum medium";
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.profileCenter hr {
+	border: 1px solid rgb(114,110,109);
+}
+
+.profileCenter .textarea {
+	resize: none;
+}
